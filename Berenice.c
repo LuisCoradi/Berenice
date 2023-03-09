@@ -3,7 +3,7 @@
 
 int main()
 {
-    float A=7.50,B=8.69,C=5.00,D=4.50,E=3.25;
+    float A=7.50,B=8.69,C=5.00,D=4.50,E=3.25,total,quantidade;
     int a,b,c,d,e;
     char tipo;
     printf("ola berenice, selecione um entre os produtos\n");
@@ -15,6 +15,33 @@ int main()
     printf("   e=      \t\t tubaina        \t\t R$ 3.25 \n");
     printf("selecione um dos produtos\n");
     scanf(" %c",&tipo);
-
+    getchar();
+    printf("agora digite quantos produtos vc deseja vender\n");
+    scanf("%f",&quantidade);
+    getchar();
+    switch(tipo){
+    case 'a':
+    total = A * quantidade;
+    printf("o valor total dessa compra e %.2f",total);
+    break;
+    case 'b':
+    total = B * quantidade;
+    printf("o valor total dessa compra e %.2f",total);
+    break;
+    case 'c':
+    total = C * quantidade;
+    printf("o valor total dessa compra e %.2f",total);
+    break;
+    case 'd':
+    total = D * quantidade;
+    printf("o valor total dessa compra e %.2f",total);
+    break;
+    case 'e':
+    total = E * quantidade;
+    printf("o valor total dessa compra e %.2f",total);
+    break;
+    default:
+    printf("codigo invalido");
+    }
     return 0;
 }
